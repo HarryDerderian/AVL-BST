@@ -97,7 +97,6 @@ public class AVL<T extends Comparable<T>>
      * @return a boolean indicating if the data was added to the tree.
      */
     public boolean add(T data){
-
         int iniSize = totalNodes;
         rootNode = insert(rootNode, data);
         return iniSize != totalNodes;
