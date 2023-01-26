@@ -53,7 +53,6 @@ public class AVL<T extends Comparable<T>>
         while(current != null && current.data_.compareTo(data) != 0)
         current = current.data_.compareTo(data) > 0 
                                      ? current.left : current.right; 
-        
         return current != null;
     }
     
