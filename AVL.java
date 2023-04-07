@@ -4,9 +4,9 @@ import java.util.Queue;
 public class AVL<T extends Comparable<T>> 
 {
     private class Node<E> {
-        E data_; // Object to be stored.
-        Node<E> left, right; // Right and left subtrees.
-        int height; // Distance from the farthest leaf.
+        E data_;
+        Node<E> left, right; 
+        int height;
         Node(E data){
             data_ = data;
             left = right = null;
